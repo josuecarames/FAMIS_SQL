@@ -8,7 +8,7 @@ SELECT
     [Asset Classes].Description AS "Asset Class",
     [Asset Ranks].Description AS "Asset Rank",
     Assets.InServiceDate AS "In-Service Date",
-    -- Manufacturer,
+    [Asset Makes].Description AS "Manufacturer",
     [Asset Models].Description AS "Model",
     [Asset Statuses].Name AS "Asset Status",
     Assets.StatusComment AS "Asset Comments",
@@ -75,4 +75,5 @@ WHERE
     -- AND Region IS NOT NULL
     -- AND [FCA Rank].Name LIKE '%Priority%'
     -- OR [FCA Rank].Name IS NOT null
+    -- AND [Asset Makes].Description LIKE 'Elins%'
 ;

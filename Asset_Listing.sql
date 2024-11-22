@@ -12,7 +12,7 @@ SELECT
     Assets.Description AS "Description",
     Assets.WarrantyEffectiveDate AS "Warranty Effective Date",
     Assets.WarrantyExpirationDate AS "Warranty Expiration Date",
-    [Properties].[Name] AS "Property",
+    Properties.[Name] AS "Property",
     Spaces.Name AS "Floor",
     Assets.Room AS "Room",
     Assets.EmployeeName AS "Employee",

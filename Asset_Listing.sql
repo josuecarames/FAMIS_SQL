@@ -32,7 +32,7 @@ LEFT JOIN [Asset Models] ON [Asset Models].Id = Assets.ModelId
 LEFT JOIN [Asset Statuses] ON [Asset Statuses].Id = Assets.AssetStatusId
 LEFT JOIN Properties ON Properties.Id = Assets.PropertyId
 LEFT JOIN Spaces ON Spaces.Id = Assets.SpaceId
-LEFT JOIN [Inspections] ON Inspections.AssetId = Assets.Id
+LEFT JOIN Inspections ON Inspections.AssetId = Assets.Id
 LEFT JOIN [Work Orders] ON [Work Orders].Id = Inspections.WorkOrderId
 LEFT JOIN Users ON Users.UpdatedById = Assets.UpdatedById
 ;
